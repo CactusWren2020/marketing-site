@@ -3,14 +3,14 @@
     <head>
         <title>Design Firm</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,800;1,300;1,500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles.css" />
-        <script src="https://kit.fontawesome.com/6f182fe5e4.js" crossorigin="anonymous"></script>
+         <link rel="stylesheet" href="./styles.css" />
+         <script src="https://kit.fontawesome.com/6f182fe5e4.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
         <section id="top-bar">
             <p>
-                (555) 555-5555 | hello@design.com
+                (555) 555-5555 | <span class="gray">hello@design.com</span>
             </p>
         </section>
         <div id="header">
@@ -45,18 +45,33 @@
                 <h1>Amazing, Entertaining, Effective</h1>
             </header>
         </div>
+
         <section id="award-winning">
          
-            <div class="box">
-                    <h2>
-                        Your Amazing <span class="your-amazing-stuff">Stuff</span>
-                    </h2>
-                </div>
-            <div class="box">
-                <h3>
-                    Made Even <span class="green italic">More </span>Amazing
-                </h3>
+            <div class="dark-wrapper">
+                <div class="box">
+                        <h2>
+                            Your Amazing <span class="your-amazing-stuff">Stuff</span>
+                        </h2>
+                        <h3>
+                            Lo<span class="green">go</span>&nbsp Web Design Company in Tempe, Arizona
+                        </h3>
+                        <p>
+                            Tech and design can get you more clients, elevate your brand, and bring value to your website, marketing, advertising, social media, and emails.
+                        </p>
+                    </div>
             </div>
+
+            <div class="light-wrapper">
+                <div class="box">
+                    <h3>
+                        Made Even <span class="green italic">More </span>Amazing
+                    </h3>
+                     <a href="" class="green italic">Explore Project</a> 
+                    <img id="laptop" src="./images/laptop.png"/>
+                </div>
+            </div>
+
         </section>
 
         <section id="recent-work">
@@ -196,47 +211,54 @@
 
         </section>
 
-        <div class="filter">
+        <!-- <div class="filter"> -->
         <section id="contact">
-            <form>  
-                <h3>Contact Us</h3>
-                <div class="form-container">
-                <label for="first-name">First Name</label>
-                <input name="first-name"/> 
-                <label for="last-name">Last Name</label>
-                <input name="last-name"/> 
-                <label for="email">Email</label>
-                <input name="email"/> 
-                <label for="company-name">Company Name</label>
-                <input name="company-name"/> 
-                <label for="phone">Phone</label>
-                <input name="phone"/> 
-                <label for="project-type">Project Type</label>
-                <input name="project-type"/> 
-                <label for="message">Message</label>
-                <textarea name="message"></textarea> 
-                <input type="submit" name="submit" value="submit">
-            </div>
-            </form>
-            <div class="engage">
-                <h2>Experience Success</h2>
-                <p class="phone-engage">555-555-5555</p>
-                <p class="address-engage">119 Jefferson Ave</p>
-                <p class="address-engage">San Diego, NY 51119</p>
-                <p class="email-engage">info@creativemarketing.com</p>
-                <hr/>
-                <h3>Recent Blog <span class="green">Posts</span></h3>
-                <div class="blog-snippet">
-                    <h4>What is a Landing Page and Why Do I Need One?</h4>
-                    <p>A Landing Page is a specialized page on your site that's targeted to a particular audience. Benefits include the ability to focus your marketing message, to track between various sources of traffic, and create A/B tests to show which campaigns are more effective.</p>
+            
+            <div class="form-wrapper">
+                <form>  
+                    <h3>Contact Us</h3>
+                    <div class="form-container">
+                    <label for="first-name">First Name</label>
+                    <input name="first-name"/> 
+                    <label for="last-name">Last Name</label>
+                    <input name="last-name"/> 
+                    <label for="email">Email</label>
+                    <input name="email"/> 
+                    <label for="company-name">Company Name</label>
+                    <input name="company-name"/> 
+                    <label for="phone">Phone</label>
+                    <input name="phone"/> 
+                    <label for="project-type">Project Type</label>
+                    <input name="project-type"/> 
+                    <label for="message">Message</label>
+                    <textarea name="message"></textarea> 
+                    <input type="submit" name="submit" value="submit">
                 </div>
-                <div class="blog-snippet">
-                    <h4>How does SEO Work and How Can I Use It?</h4>
-                    <p>Search Engine Optimization has as many definitions as internet users. Originally it simply meant configuring your website so it could be easily found by search engines, but it is commonly used now as an umbrella term for all online marketing efforts. We can help you at all steps along the way.</p>
-                </div>
-            </div>
+                </form>
+            </div> <!--form-wrapper-->
+
+            <div class="engage-wrapper">
+                <div class="engage">
+                    <h2>Experience Success</h2>
+                    <p class="phone-engage">555-555-5555</p>
+                    <p class="address-engage">119 Jefferson Ave</p>
+                    <p class="address-engage">San Diego, NY 51119</p>
+                    <p class="email-engage">info@creativemarketing.com</p>
+                    <hr/>
+                    <h3>Recent Blog <span class="green">Posts</span></h3>
+                    <div class="blog-snippet">
+                        <h4>What is a Landing Page and Why Do I Need One?</h4>
+                        <p>A Landing Page is a specialized page on your site that's targeted to a particular audience. Benefits include the ability to focus your marketing message, to track between various sources of traffic, and create A/B tests to show which campaigns are more effective.</p>
+                    </div>
+                    <div class="blog-snippet">
+                        <h4>How does SEO Work and How Can I Use It?</h4>
+                        <p>Search Engine Optimization has as many definitions as internet users. Originally it simply meant configuring your website so it could be easily found by search engines, but it is commonly used now as an umbrella term for all online marketing efforts. We can help you at all steps along the way.</p>
+                    </div>
+                </div> <!--engage-->
+            
+            </div> <!--engage-wrapper-->
         </section>
-        </div>
+        <!-- </div> -->
 
         <footer>
             <div class="footer-copyright">
