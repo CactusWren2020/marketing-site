@@ -1,3 +1,6 @@
+/* * {
+    outline: 1px dotted red;
+} */
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -196,7 +199,7 @@ section#award-winning {
     background-size: cover;
 }
 .box {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     margin-left: 100px;
     margin-top: 50px;
@@ -244,6 +247,24 @@ img#laptop {
     filter: brightness(90%);
 }
 
+i.arrow {
+    border: solid white;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 6px;
+    position: absolute;
+}
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    top: 35%;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    top: 35%; right: 20%;
+}
+
 /* RECENT WORK */
 
 section#recent-work {
@@ -260,7 +281,7 @@ section#recent-work > p, section#clients > p, section#expertise > p {
     width: 700px;
     line-height: 26px;
 }
-section#recent-work h2, section#clients h2, section#expertise h2{
+section#recent-work h2, section#clients h2, section#expertise h2, section#who-we-are h2{
     font-size: 32px;
     color: black;
 }
@@ -473,19 +494,218 @@ i {
     background-color: #88a318;
 }
 
-/* CONTACT */
 
-/* .filter {
+/* WHO WE ARE */
+
+section#who-we-are {
+    /* border: 1px dotted #88a318; */
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.slider-wrapper {
     position: relative;
 }
-.filter::before {
+/* .slider-wrapper::before {
     content: "";
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-image: url('./images/team2.jpg');
-    filter: brightness(30%);
+    
+    background-size: cover;
 } */
+.slider-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(24,24,24,0.75);
+}
+.slider {
+    /* position: relative; */
+    text-align:  left;
+    border:inherit;
+    height: 290px;
+    color: white;
+    width: 1200px;
+    background: url('./images/design-gray.jpg');
+    background-size: contain;
+     
+     
+}
+.slider h3 {
+    position: relative;
+    font-size: 44px;
+    text-transform: uppercase;
+    left: 100px;
+    top: 35%;
+}
+
+.slider .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin: 0;
+    top: 50%; left: 5%;
+}
+.slider .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin: 0;
+    top: 50%; right: 5%;
+}
+
+ 
+.green-box {
+    background-color: #b2d237;
+    padding: 110px 55px;
+    text-align: left;
+    font-size: 36px;
+    font-weight: 400;
+    color: white;
+    line-height: 1;
+    display: inline;
+}
+.gray-box {
+    background-color: #2f2f35;
+    text-align: left;
+    font-size: 36px;
+    font-weight: 400;
+    color: white;
+    line-height: 1;
+    display: inline;
+    padding: 65px 60px;
+}
+.author {
+    font-size: 16px;
+    margin-left: 200px;
+}
+.who-wrapper {
+    border: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#who-we-are p {
+    margin: 100px auto;
+    width: 700px;
+    line-height: 26px;
+}
+
+.grid-top {
+     display: flex;
+     padding-top: 15px;
+     padding-bottom: 15px;
+}
+.pi-style {
+    display: grid;
+    grid-template-columns: 340px 340px; 
+    grid-template-rows: 380px 525px;
+    grid-gap: 15px;
+    margin-right: 15px;
+    
+}
+ 
+.pi-top {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.team {
+    background: url('./images/people-2557399_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fun {
+    background: url('./images/student-849822_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pi-bottom-left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.design {
+    background: url('./images/pexels-jess-bailey-designs-1764436.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(25%);
+}
+.ux {
+    background: url('./images/ux-787968_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pi-bottom-right {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.parrot {
+    background: url('./images/parrot-812341_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.consulting {
+    background: url('./images/startup-594090_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.three-stacked {
+    display: grid;
+    width: 490px;
+    height: 890px;
+    grid-template-columns: 490px;
+    grid-template-rows: 296.299px 296.299px 296.299px;
+    grid-gap: 15px;
+}
+.grid-bottom .three-stacked {
+    margin-right: 15px;
+}
+.grid-bottom .pi-style {
+    margin-right: 0px;
+}
+.three-top {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.chillax {
+    background: url('./images/computer-1185569_1280.jpg');
+    background-size: cover;
+}
+.three-middle {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.playing {
+    background: url('./images/student-849828_1280.jpg');
+    background-size: cover;
+}
+.three-bottom {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.concentration {
+    background: url('./images/student-849824_1280.jpg');
+    background-size: cover;
+}
+.grid-bottom {
+    margin-bottom: 15px;
+     display: flex;
+}
+
+/* CONTACT */
+
 section#contact {
     display: flex;
     position: relative;
@@ -559,12 +779,12 @@ section#contact form label {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.6);
 }
 .engage {
-    /* flex-basis: 6%; */
     padding: 80px;
     overflow: hidden;
+    position: relative;
 }
 
 .engage h2, .engage h3 {
@@ -581,12 +801,21 @@ section#contact form label {
 
 .phone-engage {
     color: rgba(255,255,255,.7);
+    font-size: 1.5em;
 }
 
 .address-engage, .email-engage, .blog-snippet h4, .green {
     color: #b2b237;
 }
 
+.address-engage {
+    color: rgba(255,255,255,.7);
+    text-shadow: 1px 2px 1px rgb(0,0,0);
+}
+
+.email-engage {
+    text-shadow: 1px 2px 1px rgb(0,0,0);
+}
 .blog-snippet {
     color: white;
 }
@@ -607,9 +836,10 @@ footer p {
 
 .footer-icons {
     display: flex;
-    margin: 30px;
+    color: white;
+    margin-right: 30px;
 }
 
-.footer-icons {
-    color: white;
+.footer-icons i {
+    margin: 0 15px;
 }
