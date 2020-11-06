@@ -520,14 +520,14 @@ section#who-we-are {
     background: rgba(24,24,24,0.75);
 }
 .slider {
-    position: relative;
+    /* position: relative; */
     text-align:  left;
     border:inherit;
     height: 290px;
     color: white;
     width: 1200px;
     background: url('./images/design-gray.jpg');
-    background-size: contain;
+    background-size: cover;
 }
 .slider h3 {
     position: relative;
