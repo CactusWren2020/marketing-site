@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Design Firm</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,800;1,300;1,500&display=swap" rel="stylesheet">
          <link rel="stylesheet" href="./styles.css" />
-         <script src="https://kit.fontawesome.com/6f182fe5e4.js" crossorigin="anonymous"></script>
+        
     </head>
     
     <body>
-        <section id="top-bar">
-            <p>
-                (555) 555-5555 | <span class="gray">hello@design.com</span>
-            </p>
-        </section>
-        <div id="header">
-            <div class="logo">
-                <a href="#home">lo<span class="green">go</span></a>
-                <p>digital success</p>
-            </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Work</a>
-                </li>
-                <li>
-                    <a href="#">Clients</a>
-                </li>
-                <li>
-                    <a href="#">Expertise</a>
-                </li>
-                <li>
-                    <a href="#">Team</a>
-                </li>
-                <li  id="contact-button">
-                    <a href="#">Contact</a>
-                </li>
+       
+            <section id="top-bar">
+                <p>
+                    (555) 555-5555 | <span class="gray">hello@design.com</span>
+                </p>
+            </section>
+            <div id="header">
+                <div class="logo">
+                    <a href="#home">lo<span class="green">go</span></a>
+                    <p>digital success</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Work</a>
+                        </li>
+                        <li>
+                            <a href="#">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#">Expertise</a>
+                        </li>
+                        <li>
+                            <a href="#">Team</a>
+                        </li>
+                        <li  id="contact-button">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div> 
+    
 
-            </ul>
-
-        </nav>
-    </div>
         <div class="header-wrapper">
-            <header>
+            <header class="animate-me right-anim">
                 <h1>Amazing, Entertaining, Effective</h1>
             </header>
         </div>
@@ -50,13 +53,13 @@
          
             <div class="dark-wrapper">
                 <div class="box">
-                        <h2>
-                            Your Amazing <span class="your-amazing-stuff">Stuff</span>
+                        <h2 class="animate-me left-anim">
+                            Your Amazing <span class="your-amazing-stuff ">Stuff</span>
                         </h2>
-                        <h3>
+                        <h3 class="animate-me left-anim">
                             Lo<span class="green">go</span>&nbsp Web Design Company in Tempe, Arizona
                         </h3>
-                        <p>
+                        <p class="animate-me left-anim">
                             Tech and design can get you more clients, elevate your brand, and bring value to your website, marketing, advertising, social media, and emails.
                         </p>
                     </div>
@@ -64,7 +67,7 @@
 
             <div class="light-wrapper">
                 <div class="box">
-                    <h3>
+                    <h3 class="animate-me right-anim">
                         Made Even <span class="green italic">More </span>Amazing
                     </h3>
                      <a href="" class="green italic">Explore Project</a> 
@@ -85,17 +88,89 @@
             </p>
 
             <div class="portfolio">
-                <div class="subject one"></div>
-                <div class="subject two"></div>
-                <div class="subject three"></div>
-                <div class="subject four"></div>
-                <div class="subject five"></div>
-                <div class="subject six"></div>
-            </div>
+                
+                <div class="subject one">
+                    <image src='./images/dish-1209170_1920.jpg' class="subject-image"/>
+                    <div class="subject-overlay">
+                        <div class="subject-overlay-inner">
+                            <h3>Healthy Food for the Tempe Community</h3>
+                        <p>Fresh Foods Website Redesign</p>
+                        <span class="subject-overlay-button">EXPLORE PROJECT</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="subject two">
+                    <image src='./images/hammer-5181637_1920.jpg' class="subject-image"/>
+                    <div class="subject-overlay">
+                        <div class="subject-overlay-inner">
+                            <h3>Local Apprenticeship Program</h3>
+                        <p>Learning Life Skills On the Job</p>
+                        <span class="subject-overlay-button">EXPLORE PROJECT</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="subject three">
+                    <image src='./images/interior-2685521_1920.jpg' class="subject-image"/>
+                    <div class="subject-overlay">
+                        <div class="subject-overlay-inner">
+                            <h3>Elite Design Consultants, LLC</h3>
+                        <p>Creating Cribs to Die For</p>
+                        <span class="subject-overlay-button">EXPLORE PROJECT</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="subject four">
+                    <image src='./images/perfume-2574073_1920.jpg' class="subject-image"/>
+                    <div class="subject-overlay">
+                        <div class="subject-overlay-inner">
+                            <h3>Luxe Aromatics</h3>
+                        <p>World Class Perfumes</p>
+                        <span class="subject-overlay-button">EXPLORE PROJECT</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="subject five">
+                    <image src='./images/shepherd-574272_1920.jpg' class="subject-image"/>
+
+                    <div class="subject-overlay">
+                        
+                        <div class="subject-overlay-inner">
+                            <h3>Danger Dog Associates</h3>
+                            <p>Protection Dog Trainers</p>
+                            <span class="subject-overlay-button">EXPLORE PROJECT</span>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="subject six">
+                    <image src='./images/businessman-481113_1920.jpg');
+                     class="subject-image"/>
+                    <div class="subject-overlay">
+                        <div class="subject-overlay-inner">
+                            <h3>Greg Daedalus for Governor</h3>
+                        <p>Mr. Daedalus' Website</p>
+                        <span class="subject-overlay-button">EXPLORE PROJECT</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div> <!--portfolio-->
 
             <button class="button">View More Work</button>
 
-        </section>
+        </section> <!--recent work-->
 
         <section id="clients">
             <h2>Our Clients</h2>
@@ -104,21 +179,21 @@
                 We've been trusted to create solutions for clients both big and small, for corporations with household names and for the shops on the corner. Let us help you take your business to the next level!
             </p>
                 <div class="logo-container">
-                <div class="logos a">
-                </div>
-                <div class="logos b">
-                </div>
-                <div class="logos c">
-                </div>
-                <div class="logos d">
-                </div>
-                <div class="logos e">
-                </div>
-                <div class="logos f">
-                </div>
-                <div class="logos h">
-                </div>
-                <div class="logos i">
+                    <div class="logos a">
+                    </div>
+                    <div class="logos b animate-me left-anim">
+                    </div>
+                    <div class="logos c animate-me right-anim">
+                    </div>
+                    <div class="logos d animate-me  ">
+                    </div>
+                    <div class="logos e  ">
+                    </div>
+                    <div class="logos f  animate-me left-anim">
+                    </div>
+                    <div class="logos h  animate-me right-anim">
+                    </div>
+                    <div class="logos i">
                 </div>
                 
 
@@ -233,7 +308,7 @@
                 </div>
 
                 <div class="grid-top">
-                    <div class="pi-style">
+                    <div class="pi-style animate-me left-anim">
                         <div class="pi-top team">
                         </div>
                         <div class="pi-bottom-left design">
@@ -242,7 +317,7 @@
                         </div>
 
                     </div>
-                    <div class="three-stacked">
+                    <div class="three-stacked animate-me right-anim">
                         <div class="three-top green-box">
                          
                                 Creativity is nothing but a mind set <strong>free.</strong>
@@ -266,7 +341,7 @@
                     </div>
                 </div>
                 <div class="grid-bottom">
-                    <div class="three-stacked">
+                    <div class="three-stacked animate-me left-anim">
                         <div class="three-top chillax">
                         </div>
                         <div class="three-middle gray-box">
@@ -281,7 +356,7 @@
                         <div class="three-bottom concentration">
                         </div>
                     </div>
-                    <div class="pi-style">
+                    <div class="pi-style animate-me right-anim">
                         <div class="pi-top fun">
                         </div>
                         <div class="pi-bottom-left ux">
@@ -297,7 +372,7 @@
         <section id="contact">
 
             <div class="form-wrapper">
-                <form>  
+                <form class="animate-me left-anim">  
                     <h3>Contact Us</h3>
                     <div class="form-container">
                     <label for="first-name">First Name</label>
@@ -320,7 +395,7 @@
             </div> <!--form-wrapper-->
 
             <div class="engage-wrapper">
-                <div class="engage">
+                <div class="engage animate-me right-anim">
                     <h2>Experience Success</h2>
                     <p class="phone-engage">555.555.5555</p>
                     <p class="address-engage">119 Jefferson Ave</p>
@@ -353,6 +428,10 @@
             </div>
         </footer>
 
-
-    </body>
-</html>
+        <script src="https://kit.fontawesome.com/6f182fe5e4.js" crossorigin="anonymous"></script>
+        <script src="./scripts.js"></script>
+        <script>
+    
+        </script>
+        </body>
+        </html>
